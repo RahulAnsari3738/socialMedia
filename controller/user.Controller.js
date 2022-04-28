@@ -141,7 +141,7 @@ class Usercontroller {
           .json({ message: "user update successfully", success: true });
       }
     } catch (e) {
-      console.log(e.message);
+      console.log(e);
       return res.status(500).json({ message: e.message, success: false });
     }
   };
