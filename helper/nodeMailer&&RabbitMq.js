@@ -46,13 +46,13 @@ class Rabbitnodemailer {
               const transporter = nodemailer.createTransport({
                 service: "gmail",
                 auth: {
-                  user: "",
-                  pass: "",
+                  user: "cvb@gmail.com.com",
+                  pass: "12345678",
                 },
               });
 
               const mailOption = {
-                from: "",
+                from: "cvb@gmail.com.com",
                 to: `${mailData.emailId}`,
                 subject: `${mailData.sub}`,
                 text: `your OTP code is ${mailData.otp}`,
